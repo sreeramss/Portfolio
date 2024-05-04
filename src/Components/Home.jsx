@@ -67,7 +67,7 @@ function Home() {
               <FaInstagramSquare size={50} />
             </a>
           </div>
-          <a href={Downloadpdf} download="Sreeram Resume.pdf">
+          <a href={Downloadpdf} download="Sreeram-Resume.pdf">
             <div className="ml-16 mr-20 mt-28 lg:-mt-10 px-12 py-4 text-sm font-medium text-white bg-black rounded-3xl hover:bg-yellow-500 flex justify-between">
               <span className="mr-4">Resume</span>
               <MdOutlineFileDownload size={20} />
