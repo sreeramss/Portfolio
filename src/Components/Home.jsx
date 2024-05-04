@@ -3,7 +3,7 @@ import HeroImg from "../assets/dev-img.gif";
 import { FaGithub, FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 import Typed from "typed.js";
 import { MdOutlineFileDownload } from "react-icons/md";
-import Downloadpdf from "../assets/bodyimg/resume.pdf";
+import resumePDF from "../assets/bodyimg/resume.pdf";
 
 function Home() {
   const runningtext = useRef(null);
@@ -67,7 +67,7 @@ function Home() {
               <FaInstagramSquare size={50} />
             </a>
           </div>
-          <a href={Downloadpdf} download="sreeram-resume.pdf">
+          <a href={resumePDF} download="sreeram-resume.pdf">
             <div className="ml-16 mr-20 mt-28 lg:-mt-10 px-12 py-4 text-sm font-medium text-white bg-black rounded-3xl hover:bg-yellow-500 flex justify-between">
               <span className="mr-4">Resume</span>
               <MdOutlineFileDownload size={20} />
