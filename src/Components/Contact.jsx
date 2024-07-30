@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import emailjs from 'emailjs-com';
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -6,6 +7,10 @@ const ContactForm = () => {
         email: '',
         description: '',
     });
+
+    useEffect(() => {
+        emailjs.init('nA9Bca4dSOvP_byvt'); // Replace 'YOUR_USER_ID' with your actual EmailJS user ID
+    }, []);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -20,6 +25,15 @@ const ContactForm = () => {
         console.log('Form submitted:', formData);
 
         // Perform form submission logic here, such as sending data to a server
+        emailjs.send('portfolio-contact', 'template_v7sq1ue', formData)
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+                alert('Email sent successfully!');
+            })
+            .catch((error) => {
+                console.log('FAILED...', error);
+                alert('Failed to send email. Please try again later.');
+            });
 
         // Reset the form data to clear the input fields
         setFormData({
