@@ -10,7 +10,8 @@ function Home() {
 
   useEffect(() => {
     const typedInstance = new Typed(runningtext.current, {
-      strings: ["Full-stack developer", "Photographer", "Front-end developer","Tech Enthusiast" ],
+      strings: ["Full-stack developer", "Photographer", "Front-end developer","Tech-savvy
+" ],
       typeSpeed: 100,
       backSpeed: 100,
       cursorChar: "_",
