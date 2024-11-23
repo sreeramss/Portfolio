@@ -31,7 +31,7 @@ function Home() {
       className="flex flex-col md:flex-row justify-center h-full md:py-28 md:mb-10"
     >
       <div className="md:w-1/2">
-        <div className="text-3xl lg:text-5xl px-10 py-36">
+        <div className="text-3xl lg:text-5xl px-10 py-24">
           <p>Hi,</p>
           <br />
           <div style={{ paddingTop: "1rem" }}>
